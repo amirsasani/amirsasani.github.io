@@ -1,0 +1,118 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+@media only screen and (max-width: 340px) {
+  #app {
+    width: 85% !important; }
+    #app #abouttext {
+      margin-bottom: 35px !important; } }
+
+body {
+  color: #000;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+  height: 100vh;
+  overflow-x: hidden; }
+
+#app {
+  width: 320px;
+  margin-top: 80px;
+  padding: 100px 20px 20px 20px;
+  border-radius: 5px;
+  -ms-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -o-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  background-color: white;
+  position: relative; }
+  #app #header {
+    position: absolute;
+    top: -80px;
+    margin: auto;
+    left: 0;
+    right: 0;
+    background: url("https://avatars3.githubusercontent.com/u/10235279?v=4") no-repeat;
+    background-size: 160px 160px;
+    border-radius: 100%;
+    -ms-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -o-border-radius: 100%;
+    -webkit-border-radius: 100%;
+    width: 160px;
+    height: 160px; }
+  #app #fullname {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 15px; }
+  #app #abouttext {
+    line-height: 25px;
+    margin-bottom: 40px; }
+  #app #socialicons {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-around; }
+    #app #socialicons .icon a {
+      text-decoration: none; }
+    #app #socialicons .icon:hover.stackoverflow .so-bottom {
+      fill: #bcbbbb; }
+    #app #socialicons .icon:hover.stackoverflow .so-top {
+      fill: #f48023; }
+    #app #socialicons .icon:hover.instagram {
+      fill: url("#ig-gradient"); }
+    #app #socialicons .icon:hover.github .github-svg {
+      fill: #211f1f; }
+
+.text-center {
+  text-align: center; }
+
+.text-justify {
+  text-align: justify; }
